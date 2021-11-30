@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+    int* arr = NULL;
+    size_t size = 0;
+    int val;
+    while (scanf("%d", &val) != EOF)
+    {
+         int* newArr = realloc(arr, size + 1);
+         if (!newArr) { /* handle memory exception here */ }
+         arr = newArr;
+         size++;
+    } 
+    free(arr);
+}
