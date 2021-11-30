@@ -1,0 +1,31 @@
+
+
+#include<stdio.h>
+
+int main(void)
+
+{
+
+char arr[100];
+
+int i=0;
+
+printf(“\nEnter a string : “);
+
+gets(arr);
+
+printf(“\nThe given string : ”);
+
+while(arr[i] != ‘\0’)
+
+{
+
+printf(“%c”,arr[i]);
+
+i++;
+
+}
+
+return 0;
+
+}
